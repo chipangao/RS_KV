@@ -34,11 +34,11 @@ state = 0
 class MyLayout(Widget):
     
     def Add(self):
-        print('Add')
+        print('close')
         bus.write_byte_data(addr,fan_reg,0x00)
     def Subtract(self):
         bus.write_byte_data(addr,fan_reg,0x01)
-        print('Subtract')
+        print('open')
 
 class MyApp(App):
     def build(self):
